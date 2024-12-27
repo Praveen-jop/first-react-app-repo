@@ -1,0 +1,21 @@
+.hello-world {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* existing styles */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
