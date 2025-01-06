@@ -1,15 +1,21 @@
 function List(props) {
+  if(!props.animals) {
+    return <p>Loading...</p>
+  }
+  if (props.animals.length === 0) {
+    return <p>No animals found</p>
+  }
   return (
     <ul>
       {props.animals.map((animal) => {
-        return animal.startsWith('L') && <li key={animal}>{animal}</li>
+        return <li key={animal}>{animal}</li>
       })}
     </ul>
   )
 }
 
 function Conditional_render() {
-  const animals = ['Lion', 'Cow', 'Snake', 'Lizard']
+  const animals = []
 
   return (
     <div>
